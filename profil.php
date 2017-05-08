@@ -486,6 +486,7 @@ $last_update = $update_time['day'] . "." . $update_time['month'] . "." . $update
                   <input type="text" class="form-control form-control-sm"
                   id="PLZ" placeholder="1234" required
                   name="plz" value="<?php echo $user['plz']; ?>" maxlength="4">
+                  <datalist id="multipleresult"></datalist>
                 </div>
               </div>
 
@@ -549,13 +550,17 @@ $last_update = $update_time['day'] . "." . $update_time['month'] . "." . $update
                            // document.getElementById("ort").value=this.responseText;
 
                           var responseArray = xmlhttp.responseText.split("//");
-
-                          if(responseArray.length == 1){
-                              document.getElementById("ort").innerHTML=this.responseText;
-                          }else{
-                          document.getElementById("ort").value=responseArray[0];
-                          document.getElementById("kanton").innerHTML=responseArray[1];
-                          }
+                          //alert(responseArray.length);
+                          //
+                          if(responseArray.length == 2){
+                            // Durch split hat responseArray 2 Einträge
+                            document.getElementById("ort").value=responseArray[0];
+                            document.getElementById("kanton").innerHTML=responseArray[1];
+                          } else if (responseArray.length == 1) {
+                            // Split funktioniert nicht, Array hat nur 1 Eintrag 
+                            // #multipleresult ist leere datalist
+                            document.getElementById("multipleresult").innerHTML=this.responseText;
+                          } 
 
                         }
                       }

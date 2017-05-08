@@ -11,13 +11,14 @@ $result = mysqli_query($con,$sql);
 
 // Ein Resultat
 
-$num_rows = mysql_num_rows($result);
+$num_rows = mysqli_num_rows($result);
+//print_r($num_rows);
+if($num_rows == 0) {
+  //
+  print_r("kein Eintrag");
+}
 
-
-
-if($num_rows == 1){
-
-  print_r("1");
+elseif($num_rows == 1){
 
   $row = mysqli_fetch_array($result);
 
@@ -25,16 +26,12 @@ if($num_rows == 1){
       echo "//";
       echo $row['state'];
 
-}else {
-
-    print_r("2");
-
-echo "<datalist>"
+ } else {
+//echo "<datalist>";
   while($row = mysqli_fetch_array($result)) {
       echo '<option value="' . $row['address'] . ', ' . $row['state'] . '" />';
     }
-echo "</datalist>"
-
+//echo "</datalist>";
 }
 
 
