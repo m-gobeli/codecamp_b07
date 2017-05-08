@@ -85,6 +85,12 @@ $last_update = $update_time['day'] . "." . $update_time['month'] . "." . $update
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <!-- eigene Styles -->
   <link rel="stylesheet" href="css/p42_style.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+
+
+
+
 </head>
 <body>
   <!-- Navigation -->
@@ -477,7 +483,7 @@ $last_update = $update_time['day'] . "." . $update_time['month'] . "." . $update
               <div class="form-group row">
                 <label for="PLZ" class="col-sm-2 form-control-label">PLZ</label>
                 <div class="col-sm-10">
-                  <input  type="text" class="form-control form-control-sm"
+                  <input type="text" class="form-control form-control-sm"
                   id="PLZ" placeholder="1234" required
                   name="plz" value="<?php echo $user['plz']; ?>">
                 </div>
@@ -487,7 +493,7 @@ $last_update = $update_time['day'] . "." . $update_time['month'] . "." . $update
                 <label for="Ort" class="col-sm-2 form-control-label">Ort</label>
                 <div class="col-sm-10">
                   <input  type="text" class="form-control form-control-sm"
-                  id="Text" placeholder="Muster" required
+                  id="ort" placeholder="Muster" required
                   name="ort" value="<?php echo $user['address']; ?>">
                 </div>
               </div>
@@ -519,6 +525,40 @@ $last_update = $update_time['day'] . "." . $update_time['month'] . "." . $update
   <script src="js/jquery-3.1.1.min.js"></script>
   <!-- Beinhaltet alle JavaScript-basierten Plugins von BS -->
   <script src="js/bootstrap.min.js"></script>
+
+  <script type="text/javascript">
+
+
+// ************************************************************************ //
+// PLZ INPUT LENGTH LISTENER                                                //
+// ************************************************************************ //
+  document.getElementById('PLZ').onkeyup = function(){
+       if(this.value.length == 4){
+                  // genau 4
+                    var str = this.value;
+
+                    if (window.XMLHttpRequest) {
+                      // code for IE7+, Firefox, Chrome, Opera, Safari
+                      xmlhttp=new XMLHttpRequest();
+                    } else { // code for IE6, IE5
+                      xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+                    }
+
+                    xmlhttp.onreadystatechange = function() {
+                      if (this.readyState==4 && this.status==200) {
+                        document.getElementById("ort").value=this.responseText;
+                      }
+                    }
+                    xmlhttp.open("GET","get.php?q="+str,true);
+                    xmlhttp.send();
+
+
+              }
+      }
+
+
+
+  </script>
 
 </body>
 </html>
