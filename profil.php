@@ -215,265 +215,265 @@ $last_update = $update_time['day'] . "." . $update_time['month'] . "." . $update
                   <input type="file" name="profil_img">
                 </div>
               </div>
-			  
-			  
+
+
 			  <hr>
-			  
+
 
               <div class="form-group row">
                 <label for="PLZ" class="col-sm-2 form-control-label">Land</label>
                 <div class="col-sm-10">
 					<input id="country_name" name="country" type="text" list="country" placeholder="<?php echo $user['country']; ?>"/>
 					<datalist id="country">
-						<option <?php if($user['address'] == "") echo "selected"; ?> value="Bitte wählen" />
-						<option value="Afghanistan" <?php if($user['address'] == "Afghanistan") echo "selected"; ?> />
-						<option value="Albania" <?php if($user['address'] == "Albania") echo "selected"; ?> />
-						<option value="Algeria" <?php if($user['address'] == "Algeria") echo "selected"; ?> />
-						<option value="American Samoa" <?php if($user['address'] == "American Samoa") echo "selected"; ?> />
-						<option value="Andorra" <?php if($user['address'] == "Andorra") echo "selected"; ?> />
-						<option value="Angola" <?php if($user['address'] == "Angola") echo "selected"; ?> />
-						<option value="Anguilla" <?php if($user['address'] == "Anguilla") echo "selected"; ?> />
-						<option value="Antarctica" <?php if($user['address'] == "Antarctica") echo "selected"; ?> />
-						<option value="Antigua and Barbuda" <?php if($user['address'] == "Antigua and Barbuda") echo "selected"; ?> />
-						<option value="Argentina" <?php if($user['address'] == "Argentina") echo "selected"; ?> />
-						<option value="Armenia" <?php if($user['address'] == "Armenia") echo "selected"; ?> />
-						<option value="Aruba" <?php if($user['address'] == "Aruba") echo "selected"; ?> />
-						<option value="Australia" <?php if($user['address'] == "Australia") echo "selected"; ?> />
-						<option value="Austria" <?php if($user['address'] == "Austria") echo "selected"; ?> />
-						<option value="Azerbaijan" <?php if($user['address'] == "Azerbaijan") echo "selected"; ?> />
-						<option value="Bahamas" <?php if($user['address'] == "Bahamas") echo "selected"; ?> />
-						<option value="Bahrain" <?php if($user['address'] == "Bahrain") echo "selected"; ?> />
-						<option value="Bangladesh" <?php if($user['address'] == "Bangladesh") echo "selected"; ?> />
-						<option value="Barbados" <?php if($user['address'] == "Barbados") echo "selected"; ?> />
-						<option value="Belarus" <?php if($user['address'] == "Belarus") echo "selected"; ?> />
-						<option value="Belgium" <?php if($user['address'] == "Belgium") echo "selected"; ?> />
-						<option value="Belize" <?php if($user['address'] == "Belize") echo "selected"; ?> />
-						<option value="Benin" <?php if($user['address'] == "Benin") echo "selected"; ?> />
-						<option value="Bermuda" <?php if($user['address'] == "Bermuda") echo "selected"; ?> />
-						<option value="Bhutan" <?php if($user['address'] == "Bhutan") echo "selected"; ?> />
-						<option value="Bolivia" <?php if($user['address'] == "Bolivia") echo "selected"; ?> />
-						<option value="Bosnia and Herzegovina" <?php if($user['address'] == "Bosnia and Herzegovina") echo "selected"; ?> />
-						<option value="Botswana" <?php if($user['address'] == "Botswana") echo "selected"; ?> />
-						<option value="Bouvet Island" <?php if($user['address'] == "Bouvet Island") echo "selected"; ?> />
-						<option value="Brazil" <?php if($user['address'] == "Brazil") echo "selected"; ?> />
-						<option value="British Indian Ocean Territory" <?php if($user['address'] == "British Indian Ocean Territory") echo "selected"; ?> />
-						<option value="Brunei Darussalam" <?php if($user['address'] == "Brunei Darussalam") echo "selected"; ?> />
-						<option value="Bulgaria" <?php if($user['address'] == "Bulgaria") echo "selected"; ?> />
-						<option value="Burkina Faso" <?php if($user['address'] == "Burkina Faso") echo "selected"; ?> />
-						<option value="Burundi" <?php if($user['address'] == "Burundi") echo "selected"; ?> />
-						<option value="Cambodia" <?php if($user['address'] == "Cambodia") echo "selected"; ?> />
-						<option value="Cameroon" <?php if($user['address'] == "Cameroon") echo "selected"; ?> />
-						<option value="Canada" <?php if($user['address'] == "Canada") echo "selected"; ?> />
-						<option value="Cape Verde" <?php if($user['address'] == "Cape Verde") echo "selected"; ?> />
-						<option value="Cayman Islands" <?php if($user['address'] == "Cayman Islands") echo "selected"; ?> />
-						<option value="Central African Republic" <?php if($user['address'] == "Central African Republic") echo "selected"; ?> />
-						<option value="Chad" <?php if($user['address'] == "Chad") echo "selected"; ?> />
-						<option value="Chile" <?php if($user['address'] == "Chile") echo "selected"; ?> />
-						<option value="China" <?php if($user['address'] == "China") echo "selected"; ?> />
-						<option value="Christmas Island" <?php if($user['address'] == "Christmas Island") echo "selected"; ?> />
-						<option value="Cocos (Keeling) Islands" <?php if($user['address'] == "Cocos (Keeling) Islands") echo "selected"; ?> />
-						<option value="Colombia" <?php if($user['address'] == "Colombia") echo "selected"; ?> />
-						<option value="Comoros" <?php if($user['address'] == "Comoros") echo "selected"; ?> />
-						<option value="Congo" <?php if($user['address'] == "Congo") echo "selected"; ?> />
-						<option value="Congo, The Democratic Republic of The" <?php if($user['address'] == "Congo, The Democratic Republic of The") echo "selected"; ?> />
-						<option value="Cook Islands" <?php if($user['address'] == "Cook Islands") echo "selected"; ?> />
-						<option value="Costa Rica" <?php if($user['address'] == "Costa Rica") echo "selected"; ?> />
-						<option value="Cote D'ivoire" <?php if($user['address'] == "Cote D'ivoire") echo "selected"; ?> />
-						<option value="Croatia" <?php if($user['address'] == "Croatia") echo "selected"; ?> />
-						<option value="Cuba" <?php if($user['address'] == "Cuba") echo "selected"; ?> />
-						<option value="Cyprus" <?php if($user['address'] == "Cyprus") echo "selected"; ?> />
-						<option value="Czech Republic" <?php if($user['address'] == "Czech Republic") echo "selected"; ?> />
-						<option value="Denmark" <?php if($user['address'] == "Denmark") echo "selected"; ?> />
-						<option value="Djibouti" <?php if($user['address'] == "Djibouti") echo "selected"; ?> />
-						<option value="Dominica" <?php if($user['address'] == "Dominica") echo "selected"; ?> />
-						<option value="Dominican Republic" <?php if($user['address'] == "Dominican Republic") echo "selected"; ?> />
-						<option value="Ecuador" <?php if($user['address'] == "Ecuador") echo "selected"; ?> />
-						<option value="Egypt" <?php if($user['address'] == "Egypt") echo "selected"; ?> />
-						<option value="El Salvador" <?php if($user['address'] == "El Salvador") echo "selected"; ?> />
-						<option value="Equatorial Guinea" <?php if($user['address'] == "Equatorial Guinea") echo "selected"; ?> />
-						<option value="Eritrea" <?php if($user['address'] == "Eritrea") echo "selected"; ?> />
-						<option value="Estonia" <?php if($user['address'] == "Estonia") echo "selected"; ?> />
-						<option value="Ethiopia" <?php if($user['address'] == "Ethiopia") echo "selected"; ?> />
-						<option value="Falkland Islands (Malvinas)" <?php if($user['address'] == "Falkland Islands (Malvinas)") echo "selected"; ?> />
-						<option value="Faroe Islands" <?php if($user['address'] == "Faroe Islands") echo "selected"; ?> />
-						<option value="Fiji" <?php if($user['address'] == "Fiji") echo "selected"; ?> />
-						<option value="Finland" <?php if($user['address'] == "Finland") echo "selected"; ?> />
-						<option value="France" <?php if($user['address'] == "France") echo "selected"; ?> />
-						<option value="French Guiana" <?php if($user['address'] == "French Guiana") echo "selected"; ?> />
-						<option value="French Polynesia" <?php if($user['address'] == "French Polynesia") echo "selected"; ?> />
-						<option value="French Southern Territories" <?php if($user['address'] == "French Southern Territories") echo "selected"; ?> />
-						<option value="Gabon" <?php if($user['address'] == "Gabon") echo "selected"; ?> />
-						<option value="Gambia" <?php if($user['address'] == "Gambia") echo "selected"; ?> />
-						<option value="Georgia" <?php if($user['address'] == "Georgia") echo "selected"; ?> />
-						<option value="Germany" <?php if($user['address'] == "Germany") echo "selected"; ?> />
-						<option value="Ghana" <?php if($user['address'] == "Ghana") echo "selected"; ?> />
-						<option value="Gibraltar" <?php if($user['address'] == "Gibraltar") echo "selected"; ?> />
-						<option value="Greece" <?php if($user['address'] == "Greece") echo "selected"; ?> />
-						<option value="Greenland" <?php if($user['address'] == "Greenland") echo "selected"; ?> />
-						<option value="Grenada" <?php if($user['address'] == "Grenada") echo "selected"; ?> />
-						<option value="Guadeloupe" <?php if($user['address'] == "Guadeloupe") echo "selected"; ?> />
-						<option value="Guam" <?php if($user['address'] == "Guam") echo "selected"; ?> />
-						<option value="Guatemala" <?php if($user['address'] == "Guatemala") echo "selected"; ?> />
-						<option value="Guinea" <?php if($user['address'] == "Guinea") echo "selected"; ?> />
-						<option value="Guinea-bissau" <?php if($user['address'] == "Guinea-bissau") echo "selected"; ?> />
-						<option value="Guyana" <?php if($user['address'] == "Guyana") echo "selected"; ?> />
-						<option value="Haiti" <?php if($user['address'] == "Haiti") echo "selected"; ?> />
-						<option value="Heard Island and Mcdonald Islands" <?php if($user['address'] == "Heard Island and Mcdonald Islands") echo "selected"; ?> />
-						<option value="Holy See (Vatican City State)" <?php if($user['address'] == "Holy See (Vatican City State)") echo "selected"; ?> />
-						<option value="Honduras" <?php if($user['address'] == "Honduras") echo "selected"; ?> />
-						<option value="Hong Kong" <?php if($user['address'] == "Hong Kong") echo "selected"; ?> />
-						<option value="Hungary" <?php if($user['address'] == "Hungary") echo "selected"; ?> />
-						<option value="Iceland" <?php if($user['address'] == "Iceland") echo "selected"; ?> />
-						<option value="India" <?php if($user['address'] == "India") echo "selected"; ?> />
-						<option value="Indonesia" <?php if($user['address'] == "Indonesia") echo "selected"; ?> />
-						<option value="Iran, Islamic Republic of" <?php if($user['address'] == "Iran, Islamic Republic of") echo "selected"; ?> />
-						<option value="Iraq" <?php if($user['address'] == "Iraq") echo "selected"; ?> />
-						<option value="Ireland" <?php if($user['address'] == "Ireland") echo "selected"; ?> />
-						<option value="Israel" <?php if($user['address'] == "Israel") echo "selected"; ?> />
-						<option value="Italy" <?php if($user['address'] == "Italy") echo "selected"; ?> />
-						<option value="Jamaica" <?php if($user['address'] == "Jamaica") echo "selected"; ?> />
-						<option value="Japan" <?php if($user['address'] == "Japan") echo "selected"; ?> />
-						<option value="Jordan" <?php if($user['address'] == "Jordan") echo "selected"; ?> />
-						<option value="Kazakhstan" <?php if($user['address'] == "Kazakhstan") echo "selected"; ?> />
-						<option value="Kenya" <?php if($user['address'] == "Kenya") echo "selected"; ?> />
-						<option value="Kiribati" <?php if($user['address'] == "Kiribati") echo "selected"; ?> />
-						<option value="Korea, Democratic People's Republic of" <?php if($user['address'] == "Korea, Democratic People's Republic of") echo "selected"; ?> />
-						<option value="Korea, Republic of" <?php if($user['address'] == "Korea, Republic of") echo "selected"; ?> />
-						<option value="Kuwait" <?php if($user['address'] == "Kuwait") echo "selected"; ?> />
-						<option value="Kyrgyzstan" <?php if($user['address'] == "Kyrgyzstan") echo "selected"; ?> />
-						<option value="Lao People's Democratic Republic" <?php if($user['address'] == "Lao People's Democratic Republic") echo "selected"; ?> />
-						<option value="Latvia" <?php if($user['address'] == "Latvia") echo "selected"; ?> />
-						<option value="Lebanon" <?php if($user['address'] == "Lebanon") echo "selected"; ?> />
-						<option value="Lesotho" <?php if($user['address'] == "Lesotho") echo "selected"; ?> />
-						<option value="Liberia" <?php if($user['address'] == "Liberia") echo "selected"; ?> />
-						<option value="Libyan Arab Jamahiriya" <?php if($user['address'] == "Libyan Arab Jamahiriya") echo "selected"; ?> />
-						<option value="Liechtenstein" <?php if($user['address'] == "Liechtenstein") echo "selected"; ?> />
-						<option value="Lithuania" <?php if($user['address'] == "Lithuania") echo "selected"; ?> />
-						<option value="Luxembourg" <?php if($user['address'] == "Luxembourg") echo "selected"; ?> />
-						<option value="Macao" <?php if($user['address'] == "Macao") echo "selected"; ?> />
-						<option value="Macedonia, The Former Yugoslav Republic of" <?php if($user['address'] == "Macedonia, The Former Yugoslav Republic of") echo "selected"; ?> />
-						<option value="Madagascar" <?php if($user['address'] == "Madagascar") echo "selected"; ?> />
-						<option value="Malawi" <?php if($user['address'] == "Malawi") echo "selected"; ?> />
-						<option value="Malaysia" <?php if($user['address'] == "Malaysia") echo "selected"; ?> />
-						<option value="Maldives" <?php if($user['address'] == "Maldives") echo "selected"; ?> />
-						<option value="Mali" <?php if($user['address'] == "Mali") echo "selected"; ?> />
-						<option value="Malta" <?php if($user['address'] == "Malta") echo "selected"; ?> />
-						<option value="Marshall Islands" <?php if($user['address'] == "Marshall Islands") echo "selected"; ?> />
-						<option value="Martinique" <?php if($user['address'] == "Martinique") echo "selected"; ?> />
-						<option value="Mauritania" <?php if($user['address'] == "Mauritania") echo "selected"; ?> />
-						<option value="Mauritius" <?php if($user['address'] == "Mauritius") echo "selected"; ?> />
-						<option value="Mayotte" <?php if($user['address'] == "Mayotte") echo "selected"; ?> />
-						<option value="Mexico" <?php if($user['address'] == "Mexico") echo "selected"; ?> />
-						<option value="Micronesia, Federated States of" <?php if($user['address'] == "Micronesia, Federated States of") echo "selected"; ?> />
-						<option value="Moldova, Republic of" <?php if($user['address'] == "Moldova, Republic of") echo "selected"; ?> />
-						<option value="Monaco" <?php if($user['address'] == "Monaco") echo "selected"; ?> />
-						<option value="Mongolia" <?php if($user['address'] == "Mongolia") echo "selected"; ?> />
-						<option value="Montserrat" <?php if($user['address'] == "Montserrat") echo "selected"; ?> />
-						<option value="Morocco" <?php if($user['address'] == "Morocco") echo "selected"; ?> />
-						<option value="Mozambique" <?php if($user['address'] == "Mozambique") echo "selected"; ?> />
-						<option value="Myanmar" <?php if($user['address'] == "Myanmar") echo "selected"; ?> />
-						<option value="Namibia" <?php if($user['address'] == "Namibia") echo "selected"; ?> />
-						<option value="Nauru" <?php if($user['address'] == "Nauru") echo "selected"; ?> />
-						<option value="Nepal" <?php if($user['address'] == "Nepal") echo "selected"; ?> />
-						<option value="Netherlands" <?php if($user['address'] == "Netherlands") echo "selected"; ?> />
-						<option value="Netherlands Antilles" <?php if($user['address'] == "Netherlands Antilles") echo "selected"; ?> />
-						<option value="New Caledonia" <?php if($user['address'] == "New Caledonia") echo "selected"; ?> />
-						<option value="New Zealand" <?php if($user['address'] == "New Zealand") echo "selected"; ?> />
-						<option value="Nicaragua" <?php if($user['address'] == "Nicaragua") echo "selected"; ?> />
-						<option value="Niger" <?php if($user['address'] == "Niger") echo "selected"; ?> />
-						<option value="Nigeria" <?php if($user['address'] == "Nigeria") echo "selected"; ?> />
-						<option value="Niue" <?php if($user['address'] == "Niue") echo "selected"; ?> />
-						<option value="Norfolk Island" <?php if($user['address'] == "Norfolk Island") echo "selected"; ?> />
-						<option value="Northern Mariana Islands" <?php if($user['address'] == "Northern Mariana Islands") echo "selected"; ?> />
-						<option value="Norway" <?php if($user['address'] == "Norway") echo "selected"; ?> />
-						<option value="Oman" <?php if($user['address'] == "Oman") echo "selected"; ?> />
-						<option value="Pakistan" <?php if($user['address'] == "Pakistan") echo "selected"; ?> />
-						<option value="Palau" <?php if($user['address'] == "Palau") echo "selected"; ?> />
-						<option value="Palestinian Territory, Occupied" <?php if($user['address'] == "Palestinian Territory, Occupied") echo "selected"; ?> />
-						<option value="Panama" <?php if($user['address'] == "Panama") echo "selected"; ?> />
-						<option value="Papua New Guinea" <?php if($user['address'] == "Papua New Guinea") echo "selected"; ?> />
-						<option value="Paraguay" <?php if($user['address'] == "Paraguay") echo "selected"; ?> />
-						<option value="Peru" <?php if($user['address'] == "Peru") echo "selected"; ?> />
-						<option value="Philippines" <?php if($user['address'] == "Philippines") echo "selected"; ?> />
-						<option value="Pitcairn" <?php if($user['address'] == "Pitcairn") echo "selected"; ?> />
-						<option value="Poland" <?php if($user['address'] == "Poland") echo "selected"; ?> />
-						<option value="Portugal" <?php if($user['address'] == "Portugal") echo "selected"; ?> />
-						<option value="Puerto Rico" <?php if($user['address'] == "Puerto Rico") echo "selected"; ?> />
-						<option value="Qatar" <?php if($user['address'] == "Qatar") echo "selected"; ?> />
-						<option value="Reunion" <?php if($user['address'] == "Reunion") echo "selected"; ?> />
-						<option value="Romania" <?php if($user['address'] == "Romania") echo "selected"; ?> />
-						<option value="Russian Federation" <?php if($user['address'] == "Russian Federation") echo "selected"; ?> />
-						<option value="Rwanda" <?php if($user['address'] == "Rwanda") echo "selected"; ?> />
-						<option value="Saint Helena" <?php if($user['address'] == "Saint Helena") echo "selected"; ?> />
-						<option value="Saint Kitts and Nevis" <?php if($user['address'] == "Saint Kitts and Nevis") echo "selected"; ?> />
-						<option value="Saint Lucia" <?php if($user['address'] == "Saint Lucia") echo "selected"; ?> />
-						<option value="Saint Pierre and Miquelon" <?php if($user['address'] == "Saint Pierre and Miquelon") echo "selected"; ?> />
-						<option value="Saint Vincent and The Grenadines" <?php if($user['address'] == "Saint Vincent and The Grenadines") echo "selected"; ?> />
-						<option value="Samoa" <?php if($user['address'] == "Samoa") echo "selected"; ?> />
-						<option value="San Marino" <?php if($user['address'] == "San Marino") echo "selected"; ?> />
-						<option value="Sao Tome and Principe" <?php if($user['address'] == "Sao Tome and Principe") echo "selected"; ?> />
-						<option value="Saudi Arabia" <?php if($user['address'] == "Saudi Arabia") echo "selected"; ?> />
-						<option value="Senegal" <?php if($user['address'] == "Senegal") echo "selected"; ?> />
-						<option value="Serbia and Montenegro" <?php if($user['address'] == "Serbia and Montenegro") echo "selected"; ?> />
-						<option value="Seychelles" <?php if($user['address'] == "Seychelles") echo "selected"; ?> />
-						<option value="Sierra Leone" <?php if($user['address'] == "Sierra Leone") echo "selected"; ?> />
-						<option value="Singapore" <?php if($user['address'] == "Singapore") echo "selected"; ?> />
-						<option value="Slovakia" <?php if($user['address'] == "Slovakia") echo "selected"; ?> />
-						<option value="Slovenia" <?php if($user['address'] == "Slovenia") echo "selected"; ?> />
-						<option value="Solomon Islands" <?php if($user['address'] == "Solomon Islands") echo "selected"; ?> />
-						<option value="Somalia" <?php if($user['address'] == "Somalia") echo "selected"; ?> />
-						<option value="South Africa" <?php if($user['address'] == "South Africa") echo "selected"; ?> />
-						<option value="South Georgia and The South Sandwich Islands" <?php if($user['address'] == "South Georgia and The South Sandwich Islands") echo "selected"; ?> />
-						<option value="Spain" <?php if($user['address'] == "Spain") echo "selected"; ?> />
-						<option value="Sri Lanka" <?php if($user['address'] == "Sri Lanka") echo "selected"; ?> />
-						<option value="Sudan" <?php if($user['address'] == "Sudan") echo "selected"; ?> />
-						<option value="Suriname" <?php if($user['address'] == "Suriname") echo "selected"; ?> />
-						<option value="Svalbard and Jan Mayen" <?php if($user['address'] == "Svalbard and Jan Mayen") echo "selected"; ?> />
-						<option value="Swaziland" <?php if($user['address'] == "Swaziland") echo "selected"; ?> />
-						<option value="Sweden" <?php if($user['address'] == "Sweden") echo "selected"; ?> />
-						<option value="Switzerland" <?php if($user['address'] == "Switzerland") echo "selected"; ?> />
-						<option value="Syrian Arab Republic" <?php if($user['address'] == "Syrian Arab Republic") echo "selected"; ?> />
-						<option value="Taiwan, Province of China" <?php if($user['address'] == "Taiwan, Province of China") echo "selected"; ?> />
-						<option value="Tajikistan" <?php if($user['address'] == "Tajikistan") echo "selected"; ?> />
-						<option value="Tanzania, United Republic of" <?php if($user['address'] == "Tanzania, United Republic of") echo "selected"; ?> />
-						<option value="Thailand" <?php if($user['address'] == "Thailand") echo "selected"; ?> />
-						<option value="Timor-leste" <?php if($user['address'] == "Timor-leste") echo "selected"; ?> />
-						<option value="Togo" <?php if($user['address'] == "Togo") echo "selected"; ?> />
-						<option value="Tokelau" <?php if($user['address'] == "Tokelau") echo "selected"; ?> />
-						<option value="Tonga" <?php if($user['address'] == "Tonga") echo "selected"; ?> />
-						<option value="Trinidad and Tobago" <?php if($user['address'] == "Trinidad and Tobago") echo "selected"; ?> />
-						<option value="Tunisia" <?php if($user['address'] == "Tunisia") echo "selected"; ?> />
-						<option value="Turkey" <?php if($user['address'] == "Turkey") echo "selected"; ?> />
-						<option value="Turkmenistan" <?php if($user['address'] == "Turkmenistan") echo "selected"; ?> />
-						<option value="Turks and Caicos Islands" <?php if($user['address'] == "Turks and Caicos Islands") echo "selected"; ?> />
-						<option value="Tuvalu" <?php if($user['address'] == "Tuvalu") echo "selected"; ?> />
-						<option value="Uganda" <?php if($user['address'] == "Uganda") echo "selected"; ?> />
-						<option value="Ukraine" <?php if($user['address'] == "Ukraine") echo "selected"; ?> />
-						<option value="United Arab Emirates" <?php if($user['address'] == "United Arab Emirates") echo "selected"; ?> />
-						<option value="United Kingdom" <?php if($user['address'] == "United Kingdom") echo "selected"; ?> />
-						<option value="United States" <?php if($user['address'] == "United States") echo "selected"; ?> />
-						<option value="United States Minor Outlying Islands" <?php if($user['address'] == "United States Minor Outlying Islands") echo "selected"; ?> />
-						<option value="Uruguay" <?php if($user['address'] == "Uruguay") echo "selected"; ?> />
-						<option value="Uzbekistan" <?php if($user['address'] == "Uzbekistan") echo "selected"; ?> />
-						<option value="Vanuatu" <?php if($user['address'] == "Vanuatu") echo "selected"; ?> />
-						<option value="Venezuela" <?php if($user['address'] == "Venezuela") echo "selected"; ?> />
-						<option value="Viet Nam" <?php if($user['address'] == "Viet Nam") echo "selected"; ?> />
-						<option value="Virgin Islands, British" <?php if($user['address'] == "Virgin Islands, British") echo "selected"; ?> />
-						<option value="Virgin Islands, U.S" <?php if($user['address'] == "Virgin Islands, U.S") echo "selected"; ?> />
-						<option value="Wallis and Futuna" <?php if($user['address'] == "Wallis and Futuna") echo "selected"; ?> />
-						<option value="Western Sahara" <?php if($user['address'] == "Western Sahara") echo "selected"; ?> />
-						<option value="Yemen" <?php if($user['address'] == "Yemen") echo "selected"; ?> />
-						<option value="Zambia" <?php if($user['address'] == "Zambia") echo "selected"; ?> />
-						<option value="Zimbabwe" <?php if($user['address'] == "Zimbabwe") echo "selected"; ?> />
-					</datalist>	
+            <option <?php if($user['country'] == "") echo "selected"; ?> value="Bitte wählen" />
+						<option value="Afghanistan" <?php if($user['country'] == "Afghanistan") echo "selected"; ?> />
+						<option value="Albania" <?php if($user['country'] == "Albania") echo "selected"; ?> />
+						<option value="Algeria" <?php if($user['country'] == "Algeria") echo "selected"; ?> />
+						<option value="American Samoa" <?php if($user['country'] == "American Samoa") echo "selected"; ?> />
+						<option value="Andorra" <?php if($user['country'] == "Andorra") echo "selected"; ?> />
+						<option value="Angola" <?php if($user['country'] == "Angola") echo "selected"; ?> />
+						<option value="Anguilla" <?php if($user['country'] == "Anguilla") echo "selected"; ?> />
+						<option value="Antarctica" <?php if($user['country'] == "Antarctica") echo "selected"; ?> />
+						<option value="Antigua and Barbuda" <?php if($user['country'] == "Antigua and Barbuda") echo "selected"; ?> />
+						<option value="Argentina" <?php if($user['country'] == "Argentina") echo "selected"; ?> />
+						<option value="Armenia" <?php if($user['country'] == "Armenia") echo "selected"; ?> />
+						<option value="Aruba" <?php if($user['country'] == "Aruba") echo "selected"; ?> />
+						<option value="Australia" <?php if($user['country'] == "Australia") echo "selected"; ?> />
+						<option value="Austria" <?php if($user['country'] == "Austria") echo "selected"; ?> />
+						<option value="Azerbaijan" <?php if($user['country'] == "Azerbaijan") echo "selected"; ?> />
+						<option value="Bahamas" <?php if($user['country'] == "Bahamas") echo "selected"; ?> />
+						<option value="Bahrain" <?php if($user['country'] == "Bahrain") echo "selected"; ?> />
+						<option value="Bangladesh" <?php if($user['country'] == "Bangladesh") echo "selected"; ?> />
+						<option value="Barbados" <?php if($user['country'] == "Barbados") echo "selected"; ?> />
+						<option value="Belarus" <?php if($user['country'] == "Belarus") echo "selected"; ?> />
+						<option value="Belgium" <?php if($user['country'] == "Belgium") echo "selected"; ?> />
+						<option value="Belize" <?php if($user['country'] == "Belize") echo "selected"; ?> />
+						<option value="Benin" <?php if($user['country'] == "Benin") echo "selected"; ?> />
+						<option value="Bermuda" <?php if($user['country'] == "Bermuda") echo "selected"; ?> />
+						<option value="Bhutan" <?php if($user['country'] == "Bhutan") echo "selected"; ?> />
+						<option value="Bolivia" <?php if($user['country'] == "Bolivia") echo "selected"; ?> />
+						<option value="Bosnia and Herzegovina" <?php if($user['country'] == "Bosnia and Herzegovina") echo "selected"; ?> />
+						<option value="Botswana" <?php if($user['country'] == "Botswana") echo "selected"; ?> />
+						<option value="Bouvet Island" <?php if($user['country'] == "Bouvet Island") echo "selected"; ?> />
+						<option value="Brazil" <?php if($user['country'] == "Brazil") echo "selected"; ?> />
+						<option value="British Indian Ocean Territory" <?php if($user['country'] == "British Indian Ocean Territory") echo "selected"; ?> />
+						<option value="Brunei Darussalam" <?php if($user['country'] == "Brunei Darussalam") echo "selected"; ?> />
+						<option value="Bulgaria" <?php if($user['country'] == "Bulgaria") echo "selected"; ?> />
+						<option value="Burkina Faso" <?php if($user['country'] == "Burkina Faso") echo "selected"; ?> />
+						<option value="Burundi" <?php if($user['country'] == "Burundi") echo "selected"; ?> />
+						<option value="Cambodia" <?php if($user['country'] == "Cambodia") echo "selected"; ?> />
+						<option value="Cameroon" <?php if($user['country'] == "Cameroon") echo "selected"; ?> />
+						<option value="Canada" <?php if($user['country'] == "Canada") echo "selected"; ?> />
+						<option value="Cape Verde" <?php if($user['country'] == "Cape Verde") echo "selected"; ?> />
+						<option value="Cayman Islands" <?php if($user['country'] == "Cayman Islands") echo "selected"; ?> />
+						<option value="Central African Republic" <?php if($user['country'] == "Central African Republic") echo "selected"; ?> />
+						<option value="Chad" <?php if($user['country'] == "Chad") echo "selected"; ?> />
+						<option value="Chile" <?php if($user['country'] == "Chile") echo "selected"; ?> />
+						<option value="China" <?php if($user['country'] == "China") echo "selected"; ?> />
+						<option value="Christmas Island" <?php if($user['country'] == "Christmas Island") echo "selected"; ?> />
+						<option value="Cocos (Keeling) Islands" <?php if($user['country'] == "Cocos (Keeling) Islands") echo "selected"; ?> />
+						<option value="Colombia" <?php if($user['country'] == "Colombia") echo "selected"; ?> />
+						<option value="Comoros" <?php if($user['country'] == "Comoros") echo "selected"; ?> />
+						<option value="Congo" <?php if($user['country'] == "Congo") echo "selected"; ?> />
+						<option value="Congo, The Democratic Republic of The" <?php if($user['country'] == "Congo, The Democratic Republic of The") echo "selected"; ?> />
+						<option value="Cook Islands" <?php if($user['country'] == "Cook Islands") echo "selected"; ?> />
+						<option value="Costa Rica" <?php if($user['country'] == "Costa Rica") echo "selected"; ?> />
+						<option value="Cote D'ivoire" <?php if($user['country'] == "Cote D'ivoire") echo "selected"; ?> />
+						<option value="Croatia" <?php if($user['country'] == "Croatia") echo "selected"; ?> />
+						<option value="Cuba" <?php if($user['country'] == "Cuba") echo "selected"; ?> />
+						<option value="Cyprus" <?php if($user['country'] == "Cyprus") echo "selected"; ?> />
+						<option value="Czech Republic" <?php if($user['country'] == "Czech Republic") echo "selected"; ?> />
+						<option value="Denmark" <?php if($user['country'] == "Denmark") echo "selected"; ?> />
+						<option value="Djibouti" <?php if($user['country'] == "Djibouti") echo "selected"; ?> />
+						<option value="Dominica" <?php if($user['country'] == "Dominica") echo "selected"; ?> />
+						<option value="Dominican Republic" <?php if($user['country'] == "Dominican Republic") echo "selected"; ?> />
+						<option value="Ecuador" <?php if($user['country'] == "Ecuador") echo "selected"; ?> />
+						<option value="Egypt" <?php if($user['country'] == "Egypt") echo "selected"; ?> />
+						<option value="El Salvador" <?php if($user['country'] == "El Salvador") echo "selected"; ?> />
+						<option value="Equatorial Guinea" <?php if($user['country'] == "Equatorial Guinea") echo "selected"; ?> />
+						<option value="Eritrea" <?php if($user['country'] == "Eritrea") echo "selected"; ?> />
+						<option value="Estonia" <?php if($user['country'] == "Estonia") echo "selected"; ?> />
+						<option value="Ethiopia" <?php if($user['country'] == "Ethiopia") echo "selected"; ?> />
+						<option value="Falkland Islands (Malvinas)" <?php if($user['country'] == "Falkland Islands (Malvinas)") echo "selected"; ?> />
+						<option value="Faroe Islands" <?php if($user['country'] == "Faroe Islands") echo "selected"; ?> />
+						<option value="Fiji" <?php if($user['country'] == "Fiji") echo "selected"; ?> />
+						<option value="Finland" <?php if($user['country'] == "Finland") echo "selected"; ?> />
+						<option value="France" <?php if($user['country'] == "France") echo "selected"; ?> />
+						<option value="French Guiana" <?php if($user['country'] == "French Guiana") echo "selected"; ?> />
+						<option value="French Polynesia" <?php if($user['country'] == "French Polynesia") echo "selected"; ?> />
+						<option value="French Southern Territories" <?php if($user['country'] == "French Southern Territories") echo "selected"; ?> />
+						<option value="Gabon" <?php if($user['country'] == "Gabon") echo "selected"; ?> />
+						<option value="Gambia" <?php if($user['country'] == "Gambia") echo "selected"; ?> />
+						<option value="Georgia" <?php if($user['country'] == "Georgia") echo "selected"; ?> />
+						<option value="Germany" <?php if($user['country'] == "Germany") echo "selected"; ?> />
+						<option value="Ghana" <?php if($user['country'] == "Ghana") echo "selected"; ?> />
+						<option value="Gibraltar" <?php if($user['country'] == "Gibraltar") echo "selected"; ?> />
+						<option value="Greece" <?php if($user['country'] == "Greece") echo "selected"; ?> />
+						<option value="Greenland" <?php if($user['country'] == "Greenland") echo "selected"; ?> />
+						<option value="Grenada" <?php if($user['country'] == "Grenada") echo "selected"; ?> />
+						<option value="Guadeloupe" <?php if($user['country'] == "Guadeloupe") echo "selected"; ?> />
+						<option value="Guam" <?php if($user['country'] == "Guam") echo "selected"; ?> />
+						<option value="Guatemala" <?php if($user['country'] == "Guatemala") echo "selected"; ?> />
+						<option value="Guinea" <?php if($user['country'] == "Guinea") echo "selected"; ?> />
+						<option value="Guinea-bissau" <?php if($user['country'] == "Guinea-bissau") echo "selected"; ?> />
+						<option value="Guyana" <?php if($user['country'] == "Guyana") echo "selected"; ?> />
+						<option value="Haiti" <?php if($user['country'] == "Haiti") echo "selected"; ?> />
+						<option value="Heard Island and Mcdonald Islands" <?php if($user['country'] == "Heard Island and Mcdonald Islands") echo "selected"; ?> />
+						<option value="Holy See (Vatican City State)" <?php if($user['country'] == "Holy See (Vatican City State)") echo "selected"; ?> />
+						<option value="Honduras" <?php if($user['country'] == "Honduras") echo "selected"; ?> />
+						<option value="Hong Kong" <?php if($user['country'] == "Hong Kong") echo "selected"; ?> />
+						<option value="Hungary" <?php if($user['country'] == "Hungary") echo "selected"; ?> />
+						<option value="Iceland" <?php if($user['country'] == "Iceland") echo "selected"; ?> />
+						<option value="India" <?php if($user['country'] == "India") echo "selected"; ?> />
+						<option value="Indonesia" <?php if($user['country'] == "Indonesia") echo "selected"; ?> />
+						<option value="Iran, Islamic Republic of" <?php if($user['country'] == "Iran, Islamic Republic of") echo "selected"; ?> />
+						<option value="Iraq" <?php if($user['country'] == "Iraq") echo "selected"; ?> />
+						<option value="Ireland" <?php if($user['country'] == "Ireland") echo "selected"; ?> />
+						<option value="Israel" <?php if($user['country'] == "Israel") echo "selected"; ?> />
+						<option value="Italy" <?php if($user['country'] == "Italy") echo "selected"; ?> />
+						<option value="Jamaica" <?php if($user['country'] == "Jamaica") echo "selected"; ?> />
+						<option value="Japan" <?php if($user['country'] == "Japan") echo "selected"; ?> />
+						<option value="Jordan" <?php if($user['country'] == "Jordan") echo "selected"; ?> />
+						<option value="Kazakhstan" <?php if($user['country'] == "Kazakhstan") echo "selected"; ?> />
+						<option value="Kenya" <?php if($user['country'] == "Kenya") echo "selected"; ?> />
+						<option value="Kiribati" <?php if($user['country'] == "Kiribati") echo "selected"; ?> />
+						<option value="Korea, Democratic People's Republic of" <?php if($user['country'] == "Korea, Democratic People's Republic of") echo "selected"; ?> />
+						<option value="Korea, Republic of" <?php if($user['country'] == "Korea, Republic of") echo "selected"; ?> />
+						<option value="Kuwait" <?php if($user['country'] == "Kuwait") echo "selected"; ?> />
+						<option value="Kyrgyzstan" <?php if($user['country'] == "Kyrgyzstan") echo "selected"; ?> />
+						<option value="Lao People's Democratic Republic" <?php if($user['country'] == "Lao People's Democratic Republic") echo "selected"; ?> />
+						<option value="Latvia" <?php if($user['country'] == "Latvia") echo "selected"; ?> />
+						<option value="Lebanon" <?php if($user['country'] == "Lebanon") echo "selected"; ?> />
+						<option value="Lesotho" <?php if($user['country'] == "Lesotho") echo "selected"; ?> />
+						<option value="Liberia" <?php if($user['country'] == "Liberia") echo "selected"; ?> />
+						<option value="Libyan Arab Jamahiriya" <?php if($user['country'] == "Libyan Arab Jamahiriya") echo "selected"; ?> />
+						<option value="Liechtenstein" <?php if($user['country'] == "Liechtenstein") echo "selected"; ?> />
+						<option value="Lithuania" <?php if($user['country'] == "Lithuania") echo "selected"; ?> />
+						<option value="Luxembourg" <?php if($user['country'] == "Luxembourg") echo "selected"; ?> />
+						<option value="Macao" <?php if($user['country'] == "Macao") echo "selected"; ?> />
+						<option value="Macedonia, The Former Yugoslav Republic of" <?php if($user['country'] == "Macedonia, The Former Yugoslav Republic of") echo "selected"; ?> />
+						<option value="Madagascar" <?php if($user['country'] == "Madagascar") echo "selected"; ?> />
+						<option value="Malawi" <?php if($user['country'] == "Malawi") echo "selected"; ?> />
+						<option value="Malaysia" <?php if($user['country'] == "Malaysia") echo "selected"; ?> />
+						<option value="Maldives" <?php if($user['country'] == "Maldives") echo "selected"; ?> />
+						<option value="Mali" <?php if($user['country'] == "Mali") echo "selected"; ?> />
+						<option value="Malta" <?php if($user['country'] == "Malta") echo "selected"; ?> />
+						<option value="Marshall Islands" <?php if($user['country'] == "Marshall Islands") echo "selected"; ?> />
+						<option value="Martinique" <?php if($user['country'] == "Martinique") echo "selected"; ?> />
+						<option value="Mauritania" <?php if($user['country'] == "Mauritania") echo "selected"; ?> />
+						<option value="Mauritius" <?php if($user['country'] == "Mauritius") echo "selected"; ?> />
+						<option value="Mayotte" <?php if($user['country'] == "Mayotte") echo "selected"; ?> />
+						<option value="Mexico" <?php if($user['country'] == "Mexico") echo "selected"; ?> />
+						<option value="Micronesia, Federated States of" <?php if($user['country'] == "Micronesia, Federated States of") echo "selected"; ?> />
+						<option value="Moldova, Republic of" <?php if($user['country'] == "Moldova, Republic of") echo "selected"; ?> />
+						<option value="Monaco" <?php if($user['country'] == "Monaco") echo "selected"; ?> />
+						<option value="Mongolia" <?php if($user['country'] == "Mongolia") echo "selected"; ?> />
+						<option value="Montserrat" <?php if($user['country'] == "Montserrat") echo "selected"; ?> />
+						<option value="Morocco" <?php if($user['country'] == "Morocco") echo "selected"; ?> />
+						<option value="Mozambique" <?php if($user['country'] == "Mozambique") echo "selected"; ?> />
+						<option value="Myanmar" <?php if($user['country'] == "Myanmar") echo "selected"; ?> />
+						<option value="Namibia" <?php if($user['country'] == "Namibia") echo "selected"; ?> />
+						<option value="Nauru" <?php if($user['country'] == "Nauru") echo "selected"; ?> />
+						<option value="Nepal" <?php if($user['country'] == "Nepal") echo "selected"; ?> />
+						<option value="Netherlands" <?php if($user['country'] == "Netherlands") echo "selected"; ?> />
+						<option value="Netherlands Antilles" <?php if($user['country'] == "Netherlands Antilles") echo "selected"; ?> />
+						<option value="New Caledonia" <?php if($user['country'] == "New Caledonia") echo "selected"; ?> />
+						<option value="New Zealand" <?php if($user['country'] == "New Zealand") echo "selected"; ?> />
+						<option value="Nicaragua" <?php if($user['country'] == "Nicaragua") echo "selected"; ?> />
+						<option value="Niger" <?php if($user['country'] == "Niger") echo "selected"; ?> />
+						<option value="Nigeria" <?php if($user['country'] == "Nigeria") echo "selected"; ?> />
+						<option value="Niue" <?php if($user['country'] == "Niue") echo "selected"; ?> />
+						<option value="Norfolk Island" <?php if($user['country'] == "Norfolk Island") echo "selected"; ?> />
+						<option value="Northern Mariana Islands" <?php if($user['country'] == "Northern Mariana Islands") echo "selected"; ?> />
+						<option value="Norway" <?php if($user['country'] == "Norway") echo "selected"; ?> />
+						<option value="Oman" <?php if($user['country'] == "Oman") echo "selected"; ?> />
+						<option value="Pakistan" <?php if($user['country'] == "Pakistan") echo "selected"; ?> />
+						<option value="Palau" <?php if($user['country'] == "Palau") echo "selected"; ?> />
+						<option value="Palestinian Territory, Occupied" <?php if($user['country'] == "Palestinian Territory, Occupied") echo "selected"; ?> />
+						<option value="Panama" <?php if($user['country'] == "Panama") echo "selected"; ?> />
+						<option value="Papua New Guinea" <?php if($user['country'] == "Papua New Guinea") echo "selected"; ?> />
+						<option value="Paraguay" <?php if($user['country'] == "Paraguay") echo "selected"; ?> />
+						<option value="Peru" <?php if($user['country'] == "Peru") echo "selected"; ?> />
+						<option value="Philippines" <?php if($user['country'] == "Philippines") echo "selected"; ?> />
+						<option value="Pitcairn" <?php if($user['country'] == "Pitcairn") echo "selected"; ?> />
+						<option value="Poland" <?php if($user['country'] == "Poland") echo "selected"; ?> />
+						<option value="Portugal" <?php if($user['country'] == "Portugal") echo "selected"; ?> />
+						<option value="Puerto Rico" <?php if($user['country'] == "Puerto Rico") echo "selected"; ?> />
+						<option value="Qatar" <?php if($user['country'] == "Qatar") echo "selected"; ?> />
+						<option value="Reunion" <?php if($user['country'] == "Reunion") echo "selected"; ?> />
+						<option value="Romania" <?php if($user['country'] == "Romania") echo "selected"; ?> />
+						<option value="Russian Federation" <?php if($user['country'] == "Russian Federation") echo "selected"; ?> />
+						<option value="Rwanda" <?php if($user['country'] == "Rwanda") echo "selected"; ?> />
+						<option value="Saint Helena" <?php if($user['country'] == "Saint Helena") echo "selected"; ?> />
+						<option value="Saint Kitts and Nevis" <?php if($user['country'] == "Saint Kitts and Nevis") echo "selected"; ?> />
+						<option value="Saint Lucia" <?php if($user['country'] == "Saint Lucia") echo "selected"; ?> />
+						<option value="Saint Pierre and Miquelon" <?php if($user['country'] == "Saint Pierre and Miquelon") echo "selected"; ?> />
+						<option value="Saint Vincent and The Grenadines" <?php if($user['country'] == "Saint Vincent and The Grenadines") echo "selected"; ?> />
+						<option value="Samoa" <?php if($user['country'] == "Samoa") echo "selected"; ?> />
+						<option value="San Marino" <?php if($user['country'] == "San Marino") echo "selected"; ?> />
+						<option value="Sao Tome and Principe" <?php if($user['country'] == "Sao Tome and Principe") echo "selected"; ?> />
+						<option value="Saudi Arabia" <?php if($user['country'] == "Saudi Arabia") echo "selected"; ?> />
+						<option value="Senegal" <?php if($user['country'] == "Senegal") echo "selected"; ?> />
+						<option value="Serbia and Montenegro" <?php if($user['country'] == "Serbia and Montenegro") echo "selected"; ?> />
+						<option value="Seychelles" <?php if($user['country'] == "Seychelles") echo "selected"; ?> />
+						<option value="Sierra Leone" <?php if($user['country'] == "Sierra Leone") echo "selected"; ?> />
+						<option value="Singapore" <?php if($user['country'] == "Singapore") echo "selected"; ?> />
+						<option value="Slovakia" <?php if($user['country'] == "Slovakia") echo "selected"; ?> />
+						<option value="Slovenia" <?php if($user['country'] == "Slovenia") echo "selected"; ?> />
+						<option value="Solomon Islands" <?php if($user['country'] == "Solomon Islands") echo "selected"; ?> />
+						<option value="Somalia" <?php if($user['country'] == "Somalia") echo "selected"; ?> />
+						<option value="South Africa" <?php if($user['country'] == "South Africa") echo "selected"; ?> />
+						<option value="South Georgia and The South Sandwich Islands" <?php if($user['country'] == "South Georgia and The South Sandwich Islands") echo "selected"; ?> />
+						<option value="Spain" <?php if($user['country'] == "Spain") echo "selected"; ?> />
+						<option value="Sri Lanka" <?php if($user['country'] == "Sri Lanka") echo "selected"; ?> />
+						<option value="Sudan" <?php if($user['country'] == "Sudan") echo "selected"; ?> />
+						<option value="Suriname" <?php if($user['country'] == "Suriname") echo "selected"; ?> />
+						<option value="Svalbard and Jan Mayen" <?php if($user['country'] == "Svalbard and Jan Mayen") echo "selected"; ?> />
+						<option value="Swaziland" <?php if($user['country'] == "Swaziland") echo "selected"; ?> />
+						<option value="Sweden" <?php if($user['country'] == "Sweden") echo "selected"; ?> />
+						<option value="Switzerland" <?php if($user['country'] == "Switzerland") echo "selected"; ?> />
+						<option value="Syrian Arab Republic" <?php if($user['country'] == "Syrian Arab Republic") echo "selected"; ?> />
+						<option value="Taiwan, Province of China" <?php if($user['country'] == "Taiwan, Province of China") echo "selected"; ?> />
+						<option value="Tajikistan" <?php if($user['country'] == "Tajikistan") echo "selected"; ?> />
+						<option value="Tanzania, United Republic of" <?php if($user['country'] == "Tanzania, United Republic of") echo "selected"; ?> />
+						<option value="Thailand" <?php if($user['country'] == "Thailand") echo "selected"; ?> />
+						<option value="Timor-leste" <?php if($user['country'] == "Timor-leste") echo "selected"; ?> />
+						<option value="Togo" <?php if($user['country'] == "Togo") echo "selected"; ?> />
+						<option value="Tokelau" <?php if($user['country'] == "Tokelau") echo "selected"; ?> />
+						<option value="Tonga" <?php if($user['country'] == "Tonga") echo "selected"; ?> />
+						<option value="Trinidad and Tobago" <?php if($user['country'] == "Trinidad and Tobago") echo "selected"; ?> />
+						<option value="Tunisia" <?php if($user['country'] == "Tunisia") echo "selected"; ?> />
+						<option value="Turkey" <?php if($user['country'] == "Turkey") echo "selected"; ?> />
+						<option value="Turkmenistan" <?php if($user['country'] == "Turkmenistan") echo "selected"; ?> />
+						<option value="Turks and Caicos Islands" <?php if($user['country'] == "Turks and Caicos Islands") echo "selected"; ?> />
+						<option value="Tuvalu" <?php if($user['country'] == "Tuvalu") echo "selected"; ?> />
+						<option value="Uganda" <?php if($user['country'] == "Uganda") echo "selected"; ?> />
+						<option value="Ukraine" <?php if($user['country'] == "Ukraine") echo "selected"; ?> />
+						<option value="United Arab Emirates" <?php if($user['country'] == "United Arab Emirates") echo "selected"; ?> />
+						<option value="United Kingdom" <?php if($user['country'] == "United Kingdom") echo "selected"; ?> />
+						<option value="United States" <?php if($user['country'] == "United States") echo "selected"; ?> />
+						<option value="United States Minor Outlying Islands" <?php if($user['country'] == "United States Minor Outlying Islands") echo "selected"; ?> />
+						<option value="Uruguay" <?php if($user['country'] == "Uruguay") echo "selected"; ?> />
+						<option value="Uzbekistan" <?php if($user['country'] == "Uzbekistan") echo "selected"; ?> />
+						<option value="Vanuatu" <?php if($user['country'] == "Vanuatu") echo "selected"; ?> />
+						<option value="Venezuela" <?php if($user['country'] == "Venezuela") echo "selected"; ?> />
+						<option value="Viet Nam" <?php if($user['country'] == "Viet Nam") echo "selected"; ?> />
+						<option value="Virgin Islands, British" <?php if($user['country'] == "Virgin Islands, British") echo "selected"; ?> />
+						<option value="Virgin Islands, U.S" <?php if($user['country'] == "Virgin Islands, U.S") echo "selected"; ?> />
+						<option value="Wallis and Futuna" <?php if($user['country'] == "Wallis and Futuna") echo "selected"; ?> />
+						<option value="Western Sahara" <?php if($user['country'] == "Western Sahara") echo "selected"; ?> />
+						<option value="Yemen" <?php if($user['country'] == "Yemen") echo "selected"; ?> />
+						<option value="Zambia" <?php if($user['country'] == "Zambia") echo "selected"; ?> />
+						<option value="Zimbabwe" <?php if($user['country'] == "Zimbabwe") echo "selected"; ?> />
+					</datalist>
                 </div>
               </div>
-			  
-		  
-			  
-			  
-			  
-			  
+
+
+
+
+
+
               <div class="form-group row">
                 <label for="PLZ" class="col-sm-2 form-control-label">PLZ</label>
                 <div class="col-sm-10">
@@ -498,9 +498,9 @@ $last_update = $update_time['day'] . "." . $update_time['month'] . "." . $update
                 <div class="col-sm-10">
                   <p><?php echo $user['address']; ?></p>
                 </div>
-              </div>			  
-			  
-			  
+              </div>
+
+
             </div>
             <div class="modal-footer">
               <button type="button" class="btn btn-danger btn-sm" data-dismiss="modal">Abbrechen</button>
