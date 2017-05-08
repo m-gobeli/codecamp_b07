@@ -1,0 +1,76 @@
+/* Der komplette Inhalt muss wegen des festen Menüs um mindestens 60px nach unten verschoben werden. */
+
+body {
+  padding-top: 75px;
+}
+
+
+/* Ausblenden des Registrierungsformulars */
+
+#register-form {
+  display: none;
+}
+
+
+/* Styles für die Beitragspanels *******************************************
+/* Anpassung auf unsere Site über den Zusatz p42...
+/* Beitrags-Panels und Beitrags-Thumbnails erhalten ZUSÄTZLICHE Klasse mit dem Zusatz p42.
+/* So werden nur gezielt diese Panels verändert.
+/* http://bootsnipp.com/snippets/featured/user-comment-example */
+
+.p42thumbnail {
+  padding:0px;
+}
+.p42panel {
+	position:relative;
+}
+.p42panel>.panel-heading:after,.p42panel>.panel-heading:before {
+	position:absolute;
+	top:11px;left:-16px;
+	right:100%;
+	width:0;
+	height:0;
+	display:block;
+	content:" ";
+	border-color:transparent;
+	border-style:solid solid outset;
+	pointer-events:none;
+}
+.p42panel>.panel-heading:after {
+	border-width:7px;
+	border-right-color:#f7f7f7;
+	margin-top:1px;
+	margin-left:2px;
+}
+.p42panel>.panel-heading:before {
+	border-right-color:#ddd;
+	border-width:8px;
+}
+.p42panel>.panel-footer {
+	background-color: #ffffff;
+}
+
+/* Styles für Like- und Hate-Badges in Posts **************************/
+
+.badge.badge-success {
+  background-color: #5cb85c;
+}
+.badge.badge-danger {
+  background-color: #d9534f;
+}
+
+
+/* Styles für Friend-Buttons *******************************************
+/* Anpassung auf unsere Site über den Zusatz p42...
+/* Buttons erhalten ZUSÄTZLICHE Klasse mit dem Zusatz p42. */
+
+.p42-friend-btn {
+    margin-top: .5rem;
+}
+
+.p42-friend-btn span.glyphicon {
+	opacity: 0;
+}
+.p42-friend-btn.active span.glyphicon {
+	opacity: 1;
+}
