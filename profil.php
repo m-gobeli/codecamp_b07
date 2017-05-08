@@ -485,7 +485,7 @@ $last_update = $update_time['day'] . "." . $update_time['month'] . "." . $update
                 <div class="col-sm-10">
                   <input type="text" class="form-control form-control-sm"
                   id="PLZ" placeholder="1234" required
-                  name="plz" value="<?php echo $user['plz']; ?>">
+                  name="plz" value="<?php echo $user['plz']; ?>" maxlength="4">
                 </div>
               </div>
 
@@ -502,7 +502,7 @@ $last_update = $update_time['day'] . "." . $update_time['month'] . "." . $update
               <div class="form-group row">
                 <label for="Kanton" class="col-sm-2 form-control-label">Kanton</label>
                 <div class="col-sm-10">
-                  <p><?php echo $user['address']; ?></p>
+                  <p id="kanton"><?php echo $user['address']; ?></p>
                 </div>
               </div>
 
@@ -529,32 +529,43 @@ $last_update = $update_time['day'] . "." . $update_time['month'] . "." . $update
   <script type="text/javascript">
 
 
-// ************************************************************************ //
-// PLZ INPUT LENGTH LISTENER                                                //
-// ************************************************************************ //
-  document.getElementById('PLZ').onkeyup = function(){
-       if(this.value.length == 4){
-                  // genau 4
-                    var str = this.value;
+  // ************************************************************************ //
+  // PLZ INPUT LENGTH LISTENER                                                //
+  // ************************************************************************ //
+    document.getElementById('PLZ').onkeyup = function(){
+         if(this.value.length == 4){
+                    // genau 4
+                      var str = this.value;
 
-                    if (window.XMLHttpRequest) {
-                      // code for IE7+, Firefox, Chrome, Opera, Safari
-                      xmlhttp=new XMLHttpRequest();
-                    } else { // code for IE6, IE5
-                      xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
-                    }
-
-                    xmlhttp.onreadystatechange = function() {
-                      if (this.readyState==4 && this.status==200) {
-                        document.getElementById("ort").value=this.responseText;
+                      if (window.XMLHttpRequest) {
+                        // code for IE7+, Firefox, Chrome, Opera, Safari
+                        xmlhttp=new XMLHttpRequest();
+                      } else { // code for IE6, IE5
+                        xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
                       }
-                    }
-                    xmlhttp.open("GET","get.php?q="+str,true);
-                    xmlhttp.send();
+
+                      xmlhttp.onreadystatechange = function() {
+                        if (this.readyState==4 && this.status==200) {
+                           // document.getElementById("ort").value=this.responseText;
+
+                          var responseArray = xmlhttp.responseText.split("//");
+
+                          if(responseArray.length == 1){
+                              document.getElementById("ort").innerHTML=this.responseText;
+                          }else{
+                          document.getElementById("ort").value=responseArray[0];
+                          document.getElementById("kanton").innerHTML=responseArray[1];
+                          }
+
+                        }
+                      }
+
+                      xmlhttp.open("GET","get.php?q="+str,true);
+                      xmlhttp.send();
 
 
-              }
-      }
+                }
+        }
 
 
 
