@@ -94,7 +94,7 @@
             <div class="row">
               <div class="col-xs-12">
                 <!-- http://getbootstrap.com/css/#type-alignment -->
-                <h1 class="text-center">p42</h1>
+                <h1 class="text-center">p42 – Gruppe b07</h1>
               </div>
             </div>
 
