@@ -6,7 +6,8 @@ if (!$con) {
     die('Could not connect: ' . mysqli_error($con));
 }
 
-$sql="SELECT * FROM Switzerland WHERE plz = '".$q."'";
+$sql="SELECT * FROM Switzerland WHERE CONVERT(plz, CHAR(30)) LIKE '%".$q."%';";
+
 $result = mysqli_query($con,$sql);
 
 // Ein Resultat
@@ -22,20 +23,15 @@ elseif($num_rows == 1){
 
   $row = mysqli_fetch_array($result);
 
-      echo "<option value='$row['state']' />";
-      //echo $row['address'];
-      //echo "//";
-      //echo $row['state'];
+      echo "<option value='".$row['plz']."' />";
 
  } else {
-//echo "<datalist>";
   while($row = mysqli_fetch_array($result)) {
 
-      echo "<option value='$row['state']' />";
-      //echo $row['address'] . ', ' . $row['state'];
-      //echo "&&";
+      echo "<option value='".$row['plz']. " " .$row['address'] ."' />";
+
     }
-//echo "</datalist>";
+
 }
 
 
