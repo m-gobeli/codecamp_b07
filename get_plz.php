@@ -13,26 +13,35 @@ $result = mysqli_query($con,$sql);
 // Ein Resultat
 
 $num_rows = mysqli_num_rows($result);
-//print_r($num_rows);
+
 if($num_rows == 0) {
   //
   echo "Error";
 }
 
-elseif($num_rows == 1){
+$array_objects = array();
 
-  $row = mysqli_fetch_array($result);
+while($row = mysqli_fetch_assoc($result)) {
 
-      echo "<option value='".$row['plz']."' />";
+  //echo "<option value='".$row['plz']. " " .$row['address'] ."' />";
 
- } else {
-  while($row = mysqli_fetch_array($result)) {
+  // neues JSON Objekt befüllen und zurückliefern
+  // $myObj = new \stdClass();
+  // $myObj->plz = $row['plz'];
+  // $myObj->address = $row['address'];
+  // $myObj->state = $row['state'];
+  
+  // $myJSON = json_encode($myObj);
+  //echo $myJSON;
 
-      echo "<option value='".$row['plz']. " " .$row['address'] ."' />";
+  //
 
-    }
+  $array_objects[] = $row;
 
-}
+  }
+
+echo json_encode($array_objects);
+
 
 
 mysqli_close($con);

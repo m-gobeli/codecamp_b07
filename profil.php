@@ -488,10 +488,6 @@ $last_update = $update_time['day'] . "." . $update_time['month'] . "." . $update
                   <datalist id="poleiza">
                   </datalist>
 
-                 
-
-                  <!-- <select id="multipleresult" style="display: none;"> 
-                  </select> -->
                 </div>
               </div>
 
@@ -537,18 +533,74 @@ $last_update = $update_time['day'] . "." . $update_time['month'] . "." . $update
 
   $("#PLZ").keyup(function(){
     var plz = $(this).val();
-    console.log(this.value.length);
-    if(this.value.length > 2){
+
+    if(this.value.length == 4){ 
 
       $.ajax({
         method : "GET",
         url : "get_plz.php",
         data : { q : plz },
-        dataType: "html",
-        success : function(html){
+        dataType: "JSON",
+        success : function(data){
 
-          console.log(html);
-          $("#poleiza").html(html);
+          // alte Variante mit <object>....</object> einfügen
+          //$("#poleiza").html(html);
+
+
+
+          //var objects = JSON.parse(data);
+
+          // wie viele objects in data? // console.log(data.length); 
+          var optionstring;
+
+          if (data.length == 1) {
+            // <option value='".$row['plz']. " " .$row['address'] ."' />
+            // $("#poleiza").html(html);
+
+            // Option in Datalist einfügen
+            optionstring += "<option value='";
+            optionstring += data[0].plz;
+            optionstring += "'>";
+            optionstring += data[0].plz;
+            optionstring += " ";
+            optionstring += data[0].address;
+            optionstring += "</option>";
+
+            $("#poleiza").html(optionstring);
+
+            $('#ort').val(data[0].address);
+            $('#kanton').html(data[0].state);
+
+          } else if (data.length == 2) {
+
+            for(var i in data){
+              //   console.log(data[i].plz);
+              optionstring += "<option value='";
+              optionstring += data[i].plz;
+              optionstring += "'>";
+              optionstring += data[i].plz;
+              optionstring += " ";
+              optionstring += data[i].address;
+              optionstring += "</option>";
+
+              $("#poleiza").html(optionstring);
+
+              // bei Auswahl von User selektierte Daten in Felder übertragen
+
+                $("#PLZ").on('input', function () {
+                    var val = this.value;
+                    if($('#poleiza option').filter(function(){
+                        return this.value === val;        
+                    }).length) {
+                        $('#ort').val(data[0].address);
+                        $('#kanton').html(data[0].state);
+                    }
+                });
+
+            }
+
+          }
+
         }
 
       })
